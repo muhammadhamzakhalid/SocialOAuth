@@ -16,6 +16,7 @@ import {
 
 const googleConsoleId =
   '601505822342-ii1pdlr6i1cv1s95blhh8dijr7uvv33n.apps.googleusercontent.com';
+const facebookConsoleId = '1046191083400904';
 
 @NgModule({
   declarations: [AppComponent],
@@ -37,7 +38,7 @@ const googleConsoleId =
           },
           {
             id: FacebookLoginProvider.PROVIDER_ID,
-            provider: new FacebookLoginProvider(googleConsoleId),
+            provider: new FacebookLoginProvider(facebookConsoleId),
           },
         ],
         onError: (err) => {
